@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './header';
+// import Header from './header';
 import LastSection from './last-section';
 import Footer from './footer';
 

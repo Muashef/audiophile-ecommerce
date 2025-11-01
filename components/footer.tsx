@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <div className="w-full h-163.5 md:h-100 lg:h-91.25 footer mt-32 lg:mt-40">
+    <div className="w-full h-163.5 md:h-100 lg:h-91.25 footer mt-32 lg:mt-40 bg-black">
       <div className="container">
         <div className="flex justify-center md:justify-start items-center md:items-start">
           <div className="w-25.25 h-1 bg-[#D87D4A]"></div>

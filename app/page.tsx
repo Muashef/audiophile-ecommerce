@@ -4,8 +4,8 @@ import Hero from "@/components/hero";
 import Layout from "@/components/layout";
 import Image from "next/image";
 import Product from "@/components/product";
-import LastSection from "@/components/last-section";
-import Footer from "@/components/footer";
+// import LastSection from "@/components/last-section";
+// import Footer from "@/components/footer";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
