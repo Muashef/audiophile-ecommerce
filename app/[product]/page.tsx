@@ -54,10 +54,10 @@ function ProductPage() {
   return (
     <Layout>
       {/* Header */}
-      <div className="bg-black h-[6.0625rem]">
+      <div className="bg-black h-24.25">
         <Header border={false} />
       </div>
-      <div className="container lg:max-w-[69.375rem] mt-8 md:mt-24 mx-auto">
+      <div className="container lg:max-w-277.5 mt-8 md:mt-24 mx-auto">
         <div
           className="text-black text-[0.9375rem] font-medium opacity-50 cursor-pointer"
           onClick={() => router.back()}
@@ -113,18 +113,18 @@ function ProductPage() {
               <p className="text-[#D87D4A] text-[0.875rem] font-normal tracking-[0.625rem]">
                 NEW PRODUCT
               </p>
-              <h3 className="text-black text-[1.75rem] lg:text-[2.5rem] font-bold leading-[2rem] lg:leading-[2.75rem] uppercase">
+              <h3 className="text-black text-[1.75rem] lg:text-[2.5rem] font-bold leading-8 lg:leading-11 uppercase">
                 {product?.name} <br />
               </h3>
             </div>
-            <p className="md:w-[21.1875rem] lg:w-[27.8125rem] text-[0.9375rem] text-black font-medium opacity-50 leading-[1.5625rem]">
+            <p className="md:w-84.75 lg:w-111.25 text-[0.9375rem] text-black font-medium opacity-50 leading-6.25">
               {product?.description}
             </p>
             <p className="text-black text-[1.125rem] font-bold">
               $ {product?.price}
             </p>
             <div className="flex items-center gap-5">
-              <div className="w-[7.5rem] h-[3rem] bg-[#F1F1F1] flex items-center justify-center gap-5">
+              <div className="w-30 h-12 bg-[#F1F1F1] flex items-center justify-center gap-5">
                 <div
                   className="text-[1rem] font-bold opacity-[0.25] cursor-pointer"
                   onClick={() => count !== 1 && setCount((prev) => prev - 1)}
@@ -140,7 +140,7 @@ function ProductPage() {
                 </div>
               </div>
               <button
-                className="w-[10rem] h-[3rem] bg-[#D87D4A] font-bold text-[0.8125rem] text-white"
+                className="w-40 h-12 bg-[#D87D4A] font-bold text-[0.8125rem] text-white"
                 onClick={handleClick}
               >
                 ADD TO CART
@@ -150,18 +150,18 @@ function ProductPage() {
         </div>
         <div className="flex flex-col lg:flex-row gap-24 md:gap-32 mt-28 md:mt-32">
           <div className="flex flex-col gap-6">
-            <h3 className="text-[1.5rem] md:text-[2rem] font-bold uppercase tracking-[0.05356rem] md:tracking-[0.07144rem] leading-[2.25rem]">
+            <h3 className="text-[1.5rem] md:text-[2rem] font-bold uppercase tracking-[0.05356rem] md:tracking-[0.07144rem] leading-9">
               Features
             </h3>
-            <p className="lg:w-[39.6875rem] text-[0.9375rem] font-medium leading-[1.5625rem] opacity-50">
+            <p className="lg:w-158.75 text-[0.9375rem] font-medium leading-6.25 opacity-50">
               {product?.featuresA}
             </p>
-            <p className="lg:w-[39.6875rem] text-[0.9375rem] font-medium leading-[1.5625rem] opacity-50">
+            <p className="lg:w-158.75 text-[0.9375rem] font-medium leading-6.25 opacity-50">
               {product?.featuresB}
             </p>
           </div>
           <div className="flex flex-col md:flex-row lg:flex-col gap-6 md:gap-32 lg:gap-6">
-            <h3 className="text-[2rem] font-bold uppercase tracking-[0.07144rem] leading-[2.25rem]">
+            <h3 className="text-[2rem] font-bold uppercase tracking-[0.07144rem] leading-9">
               In the Box
             </h3>
             <div className="flex flex-col gap-3">
@@ -178,26 +178,26 @@ function ProductPage() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row mx-auto w-full md:w-[43.125rem] lg:w-[69.375rem] md:h-[23rem] lg:h-[37rem] justify-between mt-24 md:mt-40 mb-32">
-          <div className="flex flex-col gap-4 w-full md:w-[17.3125rem] lg:w-[28rem]">
+        <div className="flex flex-col md:flex-row mx-auto w-full md:w-172.5 lg:w-277.5 md:h-92 lg:h-148 justify-between mt-24 md:mt-40 mb-32">
+          <div className="flex flex-col gap-4 w-full md:w-69.25 lg:w-md">
             <div className="h-full w-full">
               {/* Desktop Image */}
               <img
                 src={product?.gallery.first.desktop}
                 alt="gallery_image"
-                className="hidden lg:block object-cover w-full h-full rounded-[0.5rem]"
+                className="hidden lg:block object-cover w-full h-full rounded-lg"
               />
               {/* Tablet Image */}
               <img
                 src={product?.gallery.first.tablet}
                 alt="gallery_image"
-                className="hidden md:block lg:hidden object-cover w-full h-full rounded-[0.5rem]"
+                className="hidden md:block lg:hidden object-cover w-full h-full rounded-lg"
               />
               {/* Mobile Image */}
               <img
                 src={product?.gallery.first.mobile}
                 alt="gallery_image"
-                className="md:hidden object-cover w-full h-[10.875rem] rounded-[0.5rem]"
+                className="md:hidden object-cover w-full h-43.5 rounded-lg"
               />
             </div>
             <div className="h-full w-full">
@@ -205,40 +205,40 @@ function ProductPage() {
               <img
                 src={product?.gallery.second.desktop}
                 alt="gallery_image"
-                className="hidden lg:block object-cover w-full h-full rounded-[0.5rem]"
+                className="hidden lg:block object-cover w-full h-full rounded-lg"
               />
               {/* Tablet Image */}
               <img
                 src={product?.gallery.second.tablet}
                 alt="gallery_image"
-                className="hidden md:block lg:hidden object-cover w-full h-full rounded-[0.5rem]"
+                className="hidden md:block lg:hidden object-cover w-full h-full rounded-lg"
               />
               {/* Mobile Image */}
               <img
                 src={product?.gallery.second.mobile}
                 alt="gallery_image"
-                className="md:hidden object-cover w-full h-full rounded-[0.5rem]"
+                className="md:hidden object-cover w-full h-full rounded-lg"
               />
             </div>
           </div>
-          <div className="w-full md:w-[24.6875rem] lg:w-[39.6875rem] h-full">
+          <div className="w-full md:w-98.75 lg:w-158.75 h-full">
             {/* Desktop Image */}
             <img
               src={product?.gallery.third.desktop}
               alt="gallery_image"
-              className="hidden lg:block object-cover w-full h-full rounded-[0.5rem]"
+              className="hidden lg:block object-cover w-full h-full rounded-lg"
             />
             {/* Tablet Image */}
             <img
               src={product?.gallery.third.tablet}
               alt="gallery_image"
-              className="hidden md:block lg:hidden object-cover w-full h-[23rem] rounded-[0.5rem]"
+              className="hidden md:block lg:hidden object-cover w-full h-92 rounded-lg"
             />
             {/* Mobile Image */}
             <img
               src={product?.gallery.third.mobile}
               alt="gallery_image"
-              className="md:hidden object-cover w-full h-full rounded-[0.5rem] mt-4 md:mt-0"
+              className="md:hidden object-cover w-full h-full rounded-lg mt-4 md:mt-0"
             />
           </div>
           {/* <div className="flex flex-col gap-5 w-full">
@@ -312,7 +312,7 @@ function ProductPage() {
                     {item.name}
                   </h3>
                   <button
-                    className="w-[10rem] h-[3rem] bg-[#D87D4A] font-bold text-[0.8125rem] text-white"
+                    className="w-40 h-12 bg-[#D87D4A] font-bold text-[0.8125rem] text-white"
                     onClick={() => router.push(item.slug)}
                   >
                     SEE PRODUCT

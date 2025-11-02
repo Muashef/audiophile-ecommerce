@@ -77,8 +77,9 @@ function Header({ border }: Header) {
           <Image
             src="/assets/shared/desktop/icon-cart.svg"
             alt="cart"
-            width={1.45831 * 16}
-            height={1.25 * 16}
+            width={23}
+            height={20}
+            style={{ height: "auto" }} 
             priority
           />
         </div>

@@ -30,7 +30,7 @@ export default function Home() {
           <div className="h-150 md:h-180 lg:h-140 bg-[#D87D4A] rounded-lg flex flex-col lg:flex-row gap-20 lg:gap-40 justify-center items-center overflow-hidden categoryA">
             <div className="hidden lg:flex justify-end items-end -mb-20">
               <Image
-                src="/assets/home/desktop/image-speaker-zx9.png"
+                src="/assets/home/desktop/image-speaker-zx9.svg"
                 alt="speaker"
                 width={25.63963 * 16}
                 height={30.8125 * 16}

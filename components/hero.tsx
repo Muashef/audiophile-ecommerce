@@ -6,7 +6,7 @@ import { PRODUCT } from "./product";
 
 function Hero({ handleClick }: PRODUCT) {
   return (
-    <div className="hero bg-black">
+    <div className="hero">
       <Header border />
       <div className="container flex flex-col items-center lg:items-start gap-7 lg:gap-5 mt-28">
         <p className="text-[0.875rem] font-normal text-white opacity-[0.4964]">

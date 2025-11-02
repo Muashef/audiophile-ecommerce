@@ -39,7 +39,7 @@ function Earphones() {
   return (
     <Layout>
       {/* header */}
-      <div className="h-[12rem] md:h-[21rem] bg-black">
+      <div className="h-48 md:h-84 bg-black">
         <Header border />
         <h2 className="text-[1.75rem] md:text-[2.5rem] font-bold text-white uppercase tracking-[0.08931rem] flex justify-center items-center mt-8 md:mt-20">
           Earphones
@@ -98,15 +98,15 @@ function Earphones() {
             <p className="text-[#D87D4A] text-[0.875rem] font-normal tracking-[0.625rem]">
               NEW PRODUCT
             </p>
-            <h3 className="text-black text-[1.75rem] md:text-[2.5rem] font-bold leading-[2.75rem] uppercase">
+            <h3 className="text-black text-[1.75rem] md:text-[2.5rem] font-bold leading-11 uppercase">
               {data[0].name} <br /> Earphones
             </h3>
           </div>
-          <p className="md:w-[35.75rem] lg:w-[27.8125rem] text-[0.9375rem] text-black opacity-50 leading-[1.5625rem]">
+          <p className="md:w-143 lg:w-111.25 text-[0.9375rem] text-black opacity-50 leading-6.25">
             {data[0].description}
           </p>
           <button
-            className="w-[10rem] h-[3rem] bg-[#D87D4A] font-bold text-[0.8125rem] text-white cursor-pointer"
+            className="w-40 h-12 bg-[#D87D4A] font-bold text-[0.8125rem] text-white cursor-pointer"
             onClick={() => router.push(data[0].slug)}
           >
             SEE PRODUCT
