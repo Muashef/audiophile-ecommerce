@@ -5,10 +5,10 @@ body {
   background: #fafafa;
 }
 
-.container {
-      /* center: true; */
-      padding: '1rem';
-}
+/* .container {
+  
+      padding: 0 10rem;
+} */
 
 .hero {
   background-color: rgba(20, 20, 20, 0.98);
