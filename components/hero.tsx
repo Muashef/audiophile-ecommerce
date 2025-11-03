@@ -20,7 +20,7 @@ function Hero({ handleClick }: PRODUCT) {
           for the passionate music enthusiast.
         </p>
         <button
-          className="w-40 h-12 bg-[#D87D4A] font-bold text-[0.8125rem] text-white"
+          className="w-40 h-12 bg-[#D87D4A] font-bold text-[0.8125rem] text-white cursor-pointer"
           onClick={() => handleClick("xx99-mark-two-headphones")}
         >
           SEE PRODUCT

@@ -67,7 +67,7 @@ function Header({ border }: Header) {
             <Link
               key={item.id}
               href={item.path}
-              className="text-white text-[0.8125rem] font-bold uppercase"
+              className="text-white text-[0.8125rem] font-bold uppercase hover:text-[#D87D4A] transition"
             >
               {item.name}
             </Link>

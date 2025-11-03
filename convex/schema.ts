@@ -1,8 +1,8 @@
-import { mutation, query } from "../_generated/server"
+import { defineSchema, defineTable } from "convex/server"
 import { v } from "convex/values"
 
-export const saveOrder = mutation({
-  args: {
+export default defineSchema({
+  orders: defineTable({
     customerName: v.string(),
     email: v.string(),
     phone: v.string(),
@@ -25,23 +25,7 @@ export const saveOrder = mutation({
     shipping: v.number(),
     tax: v.number(),
     total: v.number(),
+    status: v.string(), // "pending", "completed", "shipped"
     createdAt: v.number(),
-  },
-  handler: async ({ db }, args) => {
-    const orderId = await db.insert("orders", {
-      ...args,
-      status: "pending",
-    })
-    return orderId
-  },
+  }).index("by_email", ["email"]),
 })
-
-export const getOrder = query({
-  args: { orderId: v.id("orders") },
-  handler: async ({ db }, args) => {
-    const order = await db.get(args.orderId)
-    return order
-  },
-})
-
-// Additional updates can be added here if necessary

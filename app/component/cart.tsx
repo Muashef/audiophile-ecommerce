@@ -144,15 +144,15 @@ function Cart({ open, setOpen }: CART) {
           </h4>
         </div>
         <button
-  className="mt-3 bg-[#D87D4A] w-full h-12 text-white text-[0.8125rem] font-bold uppercase"
-  disabled={cart.length === 0}
-  // onClick={() => {
-  //   setOpen(false);       // close the cart modal
-  //   router.push("/checkout"); // navigate to checkout page
-  // }}
->
-  CHECKOUT
-</button>
+          className="mt-3 bg-[#D87D4A] w-full h-12 text-white text-[0.8125rem] font-bold uppercase cursor-pointer"
+          disabled={cart.length === 0}
+          onClick={() => {
+          setOpen(false);   
+          router.push("/checkout"); 
+        }}
+        >
+          CHECKOUT
+        </button>
       </div>
     </Modal>
   );
