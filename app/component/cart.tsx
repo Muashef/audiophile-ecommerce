@@ -7,6 +7,7 @@ import Image from "next/image";
 import { BiMinus, BiPlus } from "react-icons/bi";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
+import { useRouter } from "next/navigation";
 
 interface CART {
   open: boolean;
@@ -15,6 +16,7 @@ interface CART {
 
 function Cart({ open, setOpen }: CART) {
   const [cart, setCart] = useAtom(cartsAtom);
+  const router = useRouter();
 
   const totalPrice = (
     cart as {
@@ -142,11 +144,15 @@ function Cart({ open, setOpen }: CART) {
           </h4>
         </div>
         <button
-          className="mt-3 bg-[#D87D4A] w-full h-12 text-white text-[0.8125rem] font-bold uppercase"
-          disabled={cart.length === 0}
-        >
-          CHECKOUT
-        </button>
+  className="mt-3 bg-[#D87D4A] w-full h-12 text-white text-[0.8125rem] font-bold uppercase"
+  disabled={cart.length === 0}
+  // onClick={() => {
+  //   setOpen(false);       // close the cart modal
+  //   router.push("/checkout"); // navigate to checkout page
+  // }}
+>
+  CHECKOUT
+</button>
       </div>
     </Modal>
   );
