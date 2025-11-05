@@ -105,7 +105,7 @@ export default function ConfirmationPage() {
 
           <div className="mt-12 max-w-2xl mx-auto">
             <div className="bg-white rounded-lg p-8 md:p-12 border-4 border-blue-500">
-              {/* Header */}
+
               <div className="text-center mb-8">
                 <div className="w-16 h-16 bg-[#D87D4A] rounded-full flex items-center justify-center mx-auto mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -118,7 +118,6 @@ export default function ConfirmationPage() {
                 </p>
               </div>
 
-              {/* Order Details */}
               <div className="bg-gray-50 p-6 rounded-lg mb-8">
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div>
@@ -146,7 +145,6 @@ export default function ConfirmationPage() {
                 </div>
               </div>
 
-              {/* Totals */}
               <div className="space-y-3 mb-8 p-6 bg-black text-white rounded-lg">
                 <div className="flex justify-between text-sm opacity-75">
                   <span>Subtotal</span>
@@ -166,7 +164,6 @@ export default function ConfirmationPage() {
                 </div>
               </div>
 
-              {/* Shipping Info */}
               <div className="bg-blue-50 p-6 rounded-lg mb-8 border border-blue-200">
                 <h3 className="font-bold text-black mb-3">Shipping Address</h3>
                 <p className="text-sm text-black">{order.address}</p>
@@ -176,7 +173,6 @@ export default function ConfirmationPage() {
                 <p className="text-sm text-black">{order.country}</p>
               </div>
 
-              {/* CTA */}
               <button
                 onClick={() => router.push("/")}
                 className="w-full bg-[#D87D4A] text-white font-bold text-sm uppercase py-4 rounded hover:bg-[#c76f39] transition"

@@ -32,7 +32,7 @@ export default function OrderSuccessModal({ isOpen, orderData, onClose }: OrderS
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-lg max-w-md w-full overflow-hidden border-4 border-blue-500">
-        {/* Header with checkmark */}
+
         <div className="bg-linear-to-b from-orange-100 to-white px-8 py-8 flex flex-col items-center">
           <div className="w-16 h-16 bg-[#D87D4A] rounded-full flex items-center justify-center mb-6">
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,7 +50,6 @@ export default function OrderSuccessModal({ isOpen, orderData, onClose }: OrderS
           </p>
         </div>
 
-        {/* Order Summary Section */}
         <div className="px-8 py-6 bg-gray-50 border-t border-gray-200">
           <div className="bg-white p-4 rounded mb-4">
             {/* Show first item prominently */}
@@ -79,7 +78,6 @@ export default function OrderSuccessModal({ isOpen, orderData, onClose }: OrderS
           </div>
         </div>
 
-        {/* Action Button */}
         <div className="px-8 py-6">
           <button
             onClick={handleBackToHome}

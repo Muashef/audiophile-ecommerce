@@ -43,7 +43,6 @@ interface Order {
   paymentMethod: "e-money" | "cash-on-delivery";
 }
 
-  // Clear cart on confirmation
   useEffect(() => {
     setCart([])
   }, [setCart])
@@ -89,7 +88,7 @@ interface Order {
       </div>
       <div className="container lg:max-w-277.5 mx-auto py-12 md:py-20">
         <div className="bg-white rounded-lg p-8 md:p-12 max-w-2xl mx-auto">
-          {/* Success Icon */}
+      
           <div className="flex justify-center mb-6">
             <div className="w-16 h-16 bg-[#D87D4A] rounded-full flex items-center justify-center">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -104,13 +103,11 @@ interface Order {
             We appreciate your business and will process your order shortly.
           </p>
 
-          {/* Order ID */}
           <div className="bg-gray-50 p-6 rounded-lg mb-8">
             <p className="text-sm text-gray-500 mb-2">Order ID</p>
             <p className="text-lg font-bold text-black break-all">{orderId}</p>
           </div>
 
-          {/* Order Details */}
           <div className="space-y-6 mb-8">
             <div>
               <h2 className="text-xl font-bold text-black mb-4">Order Summary</h2>
@@ -127,7 +124,6 @@ interface Order {
               </div>
             </div>
 
-            {/* Pricing Summary */}
             <div className="bg-gray-50 p-6 rounded-lg space-y-2">
               <div className="flex justify-between">
                 <span className="text-gray-600">Subtotal</span>
@@ -147,7 +143,6 @@ interface Order {
               </div>
             </div>
 
-            {/* Shipping Details */}
             <div>
               <h3 className="font-bold text-black mb-3">Shipping Details</h3>
               <div className="bg-gray-50 p-4 rounded-lg text-sm text-gray-700 space-y-1">
@@ -160,7 +155,6 @@ interface Order {
               </div>
             </div>
 
-            {/* Payment Method */}
             <div>
               <h3 className="font-bold text-black mb-3">Payment Method</h3>
               <div className="bg-gray-50 p-4 rounded-lg text-sm">
@@ -171,14 +165,12 @@ interface Order {
             </div>
           </div>
 
-          {/* Confirmation Message */}
           <div className="bg-blue-50 border border-blue-200 p-4 rounded-lg mb-8">
             <p className="text-sm text-blue-800">
               A confirmation email has been sent to <strong>{order.email}</strong>
             </p>
           </div>
 
-          {/* Actions */}
           <div className="flex flex-col sm:flex-row gap-4">
             <button
               onClick={() => router.push("/")}
