@@ -10,18 +10,18 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 1rem auto;
-  padding: 0 1.5rem; /* 24px padding on mobile */
+  padding: 0 1.5rem; 
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    padding: 0 2.5rem; /* 40px padding on tablet */
+    padding: 0 2.5rem; 
   }
 }
 
 @media screen and (min-width: 1024px) {
   .container {
-    padding: 0 3.5rem; /* 56px padding on desktop */
+    padding: 0 3.5rem; 
   }
 }
 
