@@ -26,7 +26,7 @@ function Footer() {
                 <Link
                   key={item.id}
                   href={item.path}
-                  className="text-white text-[0.8125rem] font-bold uppercase"
+                  className="text-white text-[0.8125rem] font-bold uppercase hover:text-[#D87D4A] transition"
                 >
                   {item.name}
                 </Link>
@@ -49,6 +49,7 @@ function Footer() {
                   <div>
                     <Image
                       src="/assets/shared/desktop/icon-facebook.svg"
+                      className="cursor-pointer"
                       alt="icon-facebook"
                       width={1.5 * 16}
                       height={1.5 * 16}
@@ -58,6 +59,7 @@ function Footer() {
                   <div>
                     <Image
                       src="/assets/shared/desktop/icon-twitter.svg"
+                      className="cursor-pointer"
                       alt="icon-facebook"
                       width={1.5 * 16}
                       height={1.219 * 16}
@@ -67,6 +69,7 @@ function Footer() {
                   <div>
                     <Image
                       src="/assets/shared/desktop/icon-instagram.svg"
+                      className="cursor-pointer"
                       alt="icon-facebook"
                       width={1.5 * 16}
                       height={1.5 * 16}
@@ -80,6 +83,7 @@ function Footer() {
               <div>
                 <Image
                   src="/assets/shared/desktop/icon-facebook.svg"
+                  className="cursor-pointer"
                   alt="icon-facebook"
                   width={1.5 * 16}
                   height={1.5 * 16}
@@ -89,6 +93,7 @@ function Footer() {
               <div>
                 <Image
                   src="/assets/shared/desktop/icon-twitter.svg"
+                  className="cursor-pointer"
                   alt="icon-facebook"
                   width={1.5 * 16}
                   height={1.219 * 16}
@@ -98,6 +103,7 @@ function Footer() {
               <div>
                 <Image
                   src="/assets/shared/desktop/icon-instagram.svg"
+                  className="cursor-pointer"
                   alt="icon-facebook"
                   width={1.5 * 16}
                   height={1.5 * 16}

@@ -115,7 +115,7 @@ function Speakers() {
               {data[0].description}
             </p>
             <button
-              className="w-40 h-12 bg-[#D87D4A] font-bold text-[0.8125rem] text-white cursor-pointer"
+              className="w-40 h-12 bg-[#D87D4A] font-bold text-[0.8125rem] text-white cursor-pointer hover:bg-[#FBAF85]"
               onClick={() => router.push(data[0].slug)}
             >
               SEE PRODUCT
@@ -132,7 +132,7 @@ function Speakers() {
               {data[1].description}
             </p>
             <button
-              className="w-40 h-12 bg-[#D87D4A] font-bold text-[0.8125rem] text-white cursor-pointer"
+              className="w-40 h-12 bg-[#D87D4A] font-bold text-[0.8125rem] text-white cursor-pointer hover:bg-[#FBAF85]"
               onClick={() => router.push(data[1].slug)}
             >
               SEE PRODUCT
