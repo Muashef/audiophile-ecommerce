@@ -361,20 +361,20 @@ export default function CheckoutPage() {
 
                 <div className="space-y-4 py-6 border-t border-gray-200">
                   <div className="flex justify-between">
-                    <span className="text-[0.875rem] text-black opacity-50">Subtotal</span>
-                    <span className="text-[0.875rem] font-bold text-black">$ {subtotal.toLocaleString()}</span>
+                    <span className="text-base text-black opacity-50">Subtotal</span>
+                    <span className="text-base font-bold text-black">$ {subtotal.toLocaleString()}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[0.875rem] text-black opacity-50">Shipping</span>
-                    <span className="text-[0.875rem] font-bold text-black">$ {shipping}</span>
+                    <span className="text-base uppercase text-black opacity-50">Shipping</span>
+                    <span className="text-base font-bold text-black">$ {shipping}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[0.875rem] text-black opacity-50">VAT (INCLUDED)</span>
-                    <span className="text-[0.875rem] font-bold text-black">$ {tax.toFixed(2)}</span>
+                    <span className="text-base text-black opacity-50">VAT (INCLUDED)</span>
+                    <span className="text-base font-bold text-black">$ {tax.toFixed(2)}</span>
                   </div>
 
-                  <div className="flex justify-between pt-4 border-t border-gray-200 bg-black px-6 py-4 -mx-6 -mb-8 -mt-2 rounded-b-lg">
-                    <span className="text-[0.875rem] text-white opacity-50">GRAND TOTAL</span>
+                  <div className="flex justify-between pt-4  px-6 py-4 -mx-6 -mb-8 -mt-2 rounded-b-lg">
+                    <span className="text-base font-normal text-black opacity-50">GRAND TOTAL</span>
                     <span className="text-[1.125rem] font-bold text-[#D87D4A]">$ {total.toLocaleString()}</span>
                   </div>
                 </div>
@@ -383,7 +383,7 @@ export default function CheckoutPage() {
                   type="submit"
                   onClick={handleSubmit(onSubmit)}
                   disabled={loading || cart.length === 0}
-                  className="w-full bg-[#D87D4A] text-white font-bold text-[0.8125rem] uppercase py-4 rounded hover:bg-[#c76f39] transition disabled:opacity-50 disabled:cursor-not-allowed mt-8"
+                  className="w-full bg-[#D87D4A] text-white font-bold text-[0.8125rem] cursor-pointer uppercase py-4 rounded hover:bg-[#c76f39] transition disabled:opacity-50 disabled:cursor-not-allowed mt-8"
                 >
                   {loading ? "Processing..." : "Continue & Pay"}
                 </button>

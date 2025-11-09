@@ -29,7 +29,7 @@ function Product({ handleClick }: PRODUCT) {
           className="flex items-center gap-2 mt-3 cursor-pointer"
           onClick={() => handleClick("headphones")}
         >
-          <span className="text-[0.8125rem] font-bold opacity-50">SHOP</span>
+          <span className="text-[0.8125rem] font-bold opacity-50 hover:text-[#D87D4A]">SHOP</span>
           <Image
             src={arrow}
             alt="icon-arrow-right"
@@ -55,7 +55,7 @@ function Product({ handleClick }: PRODUCT) {
           className="flex items-center gap-2 mt-3 cursor-pointer"
           onClick={() => handleClick("speakers")}
         >
-          <span className="text-[0.8125rem] font-bold opacity-50">SHOP</span>
+          <span className="text-[0.8125rem] font-bold opacity-50 hover:text-[#D87D4A]">SHOP</span>
           <Image
             src={arrow}
             alt="icon-arrow-right"
@@ -81,7 +81,7 @@ function Product({ handleClick }: PRODUCT) {
           className="flex items-center gap-2 mt-3 cursor-pointer"
           onClick={() => handleClick("earphones")}
         >
-          <span className="text-[0.8125rem] font-bold opacity-50">SHOP</span>
+          <span className="text-[0.8125rem] font-bold opacity-50 hover:text-[#D87D4A]">SHOP</span>
           <Image
             src="/assets/shared/desktop/icon-arrow-right.svg"
             alt="icon-arrow-right"

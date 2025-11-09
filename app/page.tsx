@@ -62,7 +62,7 @@ export default function Home() {
                 deliver truly remarkable sound.
               </p>
               <button
-                className="w-40 h-12 bg-black text-[0.8125rem] font-bold text-white cursor-pointer"
+                className="w-40 h-12 bg-black text-[0.8125rem] font-bold text-white cursor-pointer hover:bg-white hover:text-black"
                 onClick={() => router.push("/zx9-speaker")}
               >
                 SEE PRODUCT
@@ -75,7 +75,7 @@ export default function Home() {
           <div className="h-80 rounded-lg mt-5 lg:mt-20 categoryB flex flex-col gap-8 justify-center pl-5 md:pl-14 lg:pl-24 bg-[#CDCDCD]">
             <h3 className="text-black font-bold text-[1.75rem]">ZX7 SPEAKER</h3>
             <button
-              className="w-40 h-12 border border-black text-[0.8125rem] font-bold cursor-pointer"
+              className="w-40 h-12 border border-black text-[0.8125rem] font-bold cursor-pointer hover:bg-black hover:text-white"
               onClick={() => router.push("/zx7-speaker")}
             >
               SEE PRODUCT
@@ -88,7 +88,7 @@ export default function Home() {
           <div className="bg-[#F1F1F1] rounded-lg flex flex-col gap-8 pl-10 lg:pl-32 justify-center h-50 md:h-80">
             <h3 className="text-[1.75rem] font-bold">YX1 EARPHONES</h3>
             <button
-              className="w-40 h-12 border border-black text-[0.8125rem] font-bold cursor-pointer"
+              className="w-40 h-12 border border-black text-[0.8125rem] font-bold cursor-pointer hover:bg-black hover:text-white"
               onClick={() => router.push("/yx1-earphones")}
             >
               SEE PRODUCT
